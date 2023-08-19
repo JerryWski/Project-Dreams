@@ -1,9 +1,10 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import './ImageCarousel.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import imagesList from '../image-data';
 
 const variants = {
@@ -34,8 +35,39 @@ const swipePower = (offset: number, velocity: number) => {
 
 export const ImageCarousel = () => {
   const [[page, direction], setPage] = useState([0, 0]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const imageIndex = wrap(0, imagesList.length, page);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const maxImages = 2;
+  let imageCount = 0;
+  const filteredImagesList = [];
+  for (let i = 0; i < imagesList.length; i++) {
+    if (imagesList[i].width >= windowWidth && imageCount < maxImages) {
+      filteredImagesList.push(imagesList[i]);
+      imageCount++;
+    }
+  }
+  const imageIndex = wrap(
+    0,
+    filteredImagesList.length,
+    page - filteredImagesList.findIndex((image) => windowWidth <= image.width)
+  );
+  // const imageIndex = wrap(
+  //   0,
+  //   imagesList.length,
+  //   page - imagesList.findIndex((image) => windowWidth <= image.width)
+  // );
 
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
@@ -46,7 +78,7 @@ export const ImageCarousel = () => {
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
-          src={imagesList[imageIndex]}
+          src={filteredImagesList[imageIndex].src}
           custom={direction}
           variants={variants}
           initial="enter"

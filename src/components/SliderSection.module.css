@@ -1,6 +1,6 @@
 .slides_wrapper {
     width: 100vw;
-    height: 300px;
+    min-height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
