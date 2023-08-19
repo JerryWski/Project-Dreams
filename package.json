@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^10.16.0",
+    "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.5.1",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.9",

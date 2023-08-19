@@ -15,11 +15,11 @@
     background-position: center center;
     color: var(--bg-black);
     font-family: var(--main-font);
-    padding: 35px 10px;
+    padding: 35px 3px;
     font-style: italic;
 }
 .intro_heading {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: -1px; 
 }
@@ -28,10 +28,11 @@
 }
 .intro_text {
     margin-top: 5px;
-    font-size: .75rem;
+    font-size: .90rem;
 }
 .intro_subtext {
     font-weight: 700;
+    font-size: .90rem;
 }
 .intro_bar {
     display: flex;
@@ -39,9 +40,8 @@
     align-items: center;
     gap: 50px;
     width: 100vw;
-    height: 60px;
+    height: 70px;
     background-color: var(--main-red);
-    padding: 0px 10px;
     font-family: var(--main-font);
 }
 .logo_container {
@@ -50,7 +50,7 @@
     max-width: 200px;
     height: 100%;
     transform: skew(-40deg);
-    margin-left: 30px;
+    margin-left: 50px;
     padding: 10px 0;
     position: relative;
     overflow: hidden;
@@ -73,4 +73,31 @@
     line-height: normal;
     font-weight: 800;
     font-style: italic;
+}
+.form_wrapper {
+    width: 100vw;
+    background-color: var(--main-red);
+    background-image: url('/bg_stars_red_mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+
+@media (max-width: 356px) {
+    .intro_bar {
+        height: 50px;
+        gap: 30px;
+    }
+    .logo_container {
+        padding: 0;
+        min-width: 130px;
+        margin-left: 20px;
+    }
+    .logo_container img {
+        width: 75px;
+    }
+    .subheader {
+        font-size: .6rem;
+    }
 }
