@@ -1,0 +1,48 @@
+.intro_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90dvw;
+    margin: 0 auto;
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+    background-image: url('../public/bg_stars_mobile2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--bg-black);
+    font-family: var(--main-font);
+    padding: 30px 10px;
+    font-style: italic;
+}
+/* .image {
+    top: -12px;
+    left: -30px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: .1;
+    z-index: 10;
+}
+img {
+    width: 240px;
+    transform: rotate(-7deg); 
+    object-fit: cover;
+} */
+.intro_heading {
+    font-size: 1.5rem;
+    font-weight: 700; 
+}
+.intro_heading span {
+    color: var(--main-red);
+}
+.intro_text {
+    margin-top: 5px;
+    font-size: .75rem;
+}
+.intro_subtext {
+    font-weight: 700;
+}

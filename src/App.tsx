@@ -1,8 +1,11 @@
 import styles from './App.module.css';
+import WelcomeSection from './components/WelcomeSection';
 
 const App = () => {
   return (
-    <div className={styles.main_container}>To jest mój świat sdsdsdsad</div>
+    <div className={styles.main_container}>
+      <WelcomeSection />
+    </div>
   );
 };
 

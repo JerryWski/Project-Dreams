@@ -5,9 +5,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-font: 'Sarabun', sans-serif;
+  --bg-black: hsl(120, 100%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --main-red: hsl(359, 100%, 47%);
+}
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-    min-height: 100vh;
-    /* background-color: rgb(9, 31, 71); */
-  }
+  font-size: 62,5%;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  font-size: 13px
+}
+body {
+  background-color: var(--bg-black);
+  color: white;
+}
