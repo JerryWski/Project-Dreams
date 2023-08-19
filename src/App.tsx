@@ -1,10 +1,8 @@
-import React from "react";
+import styles from './App.module.css';
 
 const App = () => {
   return (
-    <div>
-      To jest mój świat sdsdsdsad
-    </div>
+    <div className={styles.main_container}>To jest mój świat sdsdsdsad</div>
   );
 };
 
