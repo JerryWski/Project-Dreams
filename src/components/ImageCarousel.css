@@ -1,12 +1,12 @@
 
 .next,
 .prev {
-  top: calc(50% - 40px);
+  top: calc(30% - 20px);
   position: absolute;
   background: white;
   border-radius: 30px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   display: flex;
   color: var(--bg-black);
   justify-content: center;
@@ -24,12 +24,13 @@
 
 .prev {
   left: 10px;
-  transform: scale(-1);
+  transform: rotateY(180deg);
 }
 
 img {
   top: 0;
   left: 0;
   position: absolute;
-  width: 100%;
+  max-width: 100%;
+
 }

@@ -58,11 +58,7 @@ export const ImageCarousel = () => {
       imageCount++;
     }
   }
-  const imageIndex = wrap(
-    0,
-    filteredImagesList.length,
-    page - filteredImagesList.findIndex((image) => windowWidth <= image.width)
-  );
+  const imageIndex = wrap(0, filteredImagesList.length, page);
   // const imageIndex = wrap(
   //   0,
   //   imagesList.length,
