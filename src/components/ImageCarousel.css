@@ -28,9 +28,6 @@
 }
 
 img {
-  top: 0;
-  left: 0;
   position: absolute;
-  max-width: 100%;
-
+  width: 100%;
 }
