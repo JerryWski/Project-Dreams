@@ -13,7 +13,7 @@ const HouseContainer = () => {
       </picture>
       <div className={styles.house_description}>
         <h2 className={styles.description_header}>
-          Wygraj nowe mieszkanie i … kasą na urządzenie!
+          Wygraj nowe mieszkanie i … kasę na urządzenie!
         </h2>
         <span className={styles.redline} />
         <p className={styles.description_text}>
