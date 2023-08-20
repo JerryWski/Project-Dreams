@@ -8,6 +8,9 @@
   justify-content: center;
   padding-bottom: 3px;
 }
-.prizes_image {
-  width: 100vw;
+
+@media (min-width: 800px) {
+  .slider_container {
+    /* max-height: 400px; */
+  }
 }

@@ -17,7 +17,7 @@
 .swiper-slide img {
   display: block;
   width: 100vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -27,9 +27,17 @@
 .swiper-button-prev.swiper-button-disabled {
   /* opacity: 1; */
 }
-.swiper-pagination-bullet {
-  
-}
 .swiper-pagination-bullet-active {
   background: var(--white);
+}
+
+@media (min-width: 800px) {
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-wrapper {
+    height: fit-content;
+  } 
+ 
 }

@@ -1,52 +1,78 @@
 .house_container {
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #191919;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
 }
 .house_image {
-    width: 100vw;
+  width: 100vw;
 }
 .house_description {
-    width: 100vw;
-    background-color: #191919;
-    background-image: url('./motot_bg_mobile.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 30px;
-    font-family: 'Paytone One', sans-serif;
+  width: 100vw;
+  background-color: #191919;
+  background-image: url('./motot_bg_mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px;
+  font-family: 'Paytone One', sans-serif;
 }
 .description_header {
-    font-size: 1.4rem;
-    font-family: var(--main-font);
-    font-style: italic;
-    font-weight: 800;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 0 30px;
-    letter-spacing: -1px;
-    line-height: 1.1rem;
-    word-break: break-word;
+  font-size: 1.4rem;
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  letter-spacing: -1px;
+  line-height: 1.1rem;
+  word-break: break-word;
 }
 .redline {
-    display: block;
-    margin: 0 auto;
-    width: 50px;
-    height: 5px;
-    margin-bottom: 30px;
-    background-color: var(--main-red);
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 5px;
+  margin-bottom: 30px;
+  background-color: var(--main-red);
 }
 .description_text {
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
 }
 .motor_description :nth-child(4) {
-    padding: 0px 20px 0 20px;
-    margin-bottom: 0;
+  padding: 0px 20px 0 20px;
+  margin-bottom: 0;
+}
+.description_span {
+    display: none;
+}
+@media (min-width: 800px) {
+    .house_description {
+        max-height: 500px;
+    }
+  .description_header {
+    font-size: 2.7rem;
+    margin-top: 60px;
+    padding-bottom: 15px;
+  }
+  .description_text {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+  }
+  .description_span {
+    display: inline;
+}
+  .house_description :nth-child(4) {
+    display: none;
+  }
+  
 }

@@ -1,6 +1,5 @@
 .motor_container {
-    
-    height: fit-content;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,4 +48,25 @@
 .motor_description :nth-child(4) {
     padding: 0px 20px 0 20px;
     margin-bottom: 0;
+}
+@media (min-width: 800px) {
+    .motor_description {
+        max-height: 600px;
+    }
+    .description_header {
+        margin-top: 60px;
+        padding-bottom: 15px;
+        font-size: 2.7rem;
+    }
+    .description_text {
+        margin-bottom: 0;
+        max-width: 680px;
+        margin: auto;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .motor_description :nth-child(4) {
+        margin-bottom: 60px;
+        
+    }
 }
