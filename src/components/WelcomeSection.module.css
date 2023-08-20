@@ -102,3 +102,45 @@
         font-size: .6rem;
     }
 }
+@media (min-width: 400px) {
+    .subheader {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .intro_wrapper {
+        background-image: url('/bg_stars.jpg');
+    }
+    .intro_heading {
+        font-size: 4.5rem;
+        font-weight: 700; 
+    }
+    .intro_text {
+        margin-top: 5px;
+        font-size: 1.90rem;
+    }
+    .intro_subtext {
+        font-weight: 700;
+        font-size:1.90rem;
+    }
+    .intro_bar {
+        height: 150px;
+        gap: 30px;
+    }
+    .logo_container {
+        max-width: 300px;
+        width: 300px;
+    }
+    .logo_container img {
+        width: 190px;
+        margin-left: 40px;
+    }
+    .subheader_container {
+        margin: 0;
+    }
+    .subheader {
+        text-align: center;
+        font-size: 1.9rem;
+    }
+    
+}
