@@ -1,3 +1,4 @@
+import FormSection from './FormSection';
 import styles from './WelcomeSection.module.css';
 
 const WelcomeSection = () => {
@@ -25,7 +26,9 @@ const WelcomeSection = () => {
           </div>
         </div>
       </div>
-      <div className={styles.form_wrapper}>Form</div>
+      <div className={styles.form_wrapper}>
+        <FormSection />
+      </div>
     </div>
   );
 };
