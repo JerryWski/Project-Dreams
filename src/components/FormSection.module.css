@@ -17,6 +17,9 @@
   width: 60px;
   height: 40px;
 }
+.input_image {
+  display: none;
+}
 .form_header {
   max-width: 300px;
   text-align: center;
@@ -40,9 +43,8 @@
   border: none;
 }
 .checbox_container {
-  align-self: flex-start;
-  padding-left: 30px;
-  /* padding-right: 37px; */
+  padding-left: 4px;
+  padding-right: 37px;
   margin: 2px;
   width: 400px;
 }
@@ -64,40 +66,39 @@
   vertical-align: middle; /* Wyrównaj checkbox w pionie */
 }
 .form_button {
-border: 1px solid var(--white);
-padding: 5px 15px;
-background-color: var(--bg-black);
-color: var(--white);
-font-family: var(--main-font);
-font-weight: 800;
-font-size: 1.4rem;
-display: flex;
-justify-content: center;
-align-items: center;
-font-style: italic;
-margin-top: 10px;
-cursor: pointer;
-transition: .2s all ease-in;
+  border: 1px solid var(--white);
+  padding: 0px 15px;
+  background-color: var(--bg-black);
+  color: var(--white);
+  font-family: var(--main-font);
+  font-weight: 800;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
 }
 .form_button:hover {
-    color: var(--main-red);
-    background-color: var(--white);
-    border: 1px solid var(--bg-black);
+  color: var(--main-red);
+  background-color: var(--white);
+  border: 1px solid var(--bg-black);
 }
 .form_button:hover svg {
-    stroke: var(--main-red);
+  stroke: var(--main-red);
 }
 .form_button span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }
 .form_button span svg {
-    width: 40px;
-    height: 40px;
-    transition: .2s all ease-in;
-
+  width: 40px;
+  height: 40px;
+  transition: 0.2s all ease-in;
 }
 
 @media (min-width: 600px) {
@@ -111,6 +112,15 @@ transition: .2s all ease-in;
   }
 }
 @media (max-width: 370px) {
+  .inputs_container {
+    justify-content: center;
+    align-items: center;
+  }
+  .checbox_container {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
   .form_header_wrapper {
     gap: 0;
   }
@@ -124,10 +134,57 @@ transition: .2s all ease-in;
     height: 20px;
   }
   .form_inputs {
-    width: 240px;
+    max-width: 280px;
   }
   .checbox_container {
     padding-left: 5px;
-    max-width: 250px;
+    max-width: 280px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 800px) {
+  .form_container {
+    display: row;
+  }
+  .form_header_wrapper {
+    margin-top: 30px;
+    padding: 0 40px;
+    display: block;
+    text-align: center;
+  }
+  .form_header {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+  .inputs_wrapper {
+    flex-direction: row;
+    gap: 40px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .data_wrapper {
+    display: flex;
+  }
+  .input_image__container {
+    align-self: flex-start;
+  }
+  .form_image {
+    display: none;
+  }
+  .input_image {
+    display: block;
+    width: 150px;
+    height: 140px;
+  }
+  .checbox_container {
+    padding-left: 5px;
+  }
+  .form_button {
+    margin-left: 0;
+  }
+}
+@media (max-width: 925px) {
+  .data_wrapper {
+    flex-wrap: wrap;
   }
 }
