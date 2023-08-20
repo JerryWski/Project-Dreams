@@ -58,12 +58,12 @@
   color: var(--bg-black);
 }
 .form_checkbox[type='checkbox'] {
-  width: 20px; /* Dostosuj szerokość checkboxa */
-  height: 20px; /* Dostosuj wysokość checkboxa */
-  border: 2px solid #999; /* Dodaj obramowanie */
-  border-radius: 4px; /* Dodaj zaokrąglenia */
-  cursor: pointer; /* Kursor wskazujący na możliwość kliknięcia */
-  vertical-align: middle; /* Wyrównaj checkbox w pionie */
+  width: 20px; 
+  height: 20px; 
+  border: 2px solid #999; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  vertical-align: middle;
 }
 .form_button {
   border: 1px solid var(--white);

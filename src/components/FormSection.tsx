@@ -4,6 +4,23 @@ import styles from './FormSection.module.css';
 const FormSection = () => {
   return (
     <div className={styles.form_section}>
+      <ul className={styles.social_bar}>
+        <li className={styles.social_bar__items}>
+          <a className={styles.icons} href=".">
+            <i className="fa-brands fa-facebook-f" />
+          </a>
+        </li>
+        <li className={styles.social_bar__items}>
+          <a className={styles.icons} href=".">
+            <i className="fa-brands fa-instagram" />
+          </a>
+        </li>
+        <li className={styles.social_bar__items}>
+          <a className={styles.icons} href=".">
+            <i className="fa-brands fa-instagram" />
+          </a>
+        </li>
+      </ul>
       <form id="myForm" className={styles.form_container}>
         <div className={styles.form_header_wrapper}>
           <img
