@@ -17,11 +17,11 @@ const MotorSection = () => {
         </h2>
         <span className={styles.redline} />
         <p className={styles.description_text}>
-          Dzieki loterii Spełnij-Marzenia.pl mozesz zostac posiadaczem BMW M4
+          Dzięki loterii Spełnij-Marzenia.pl możesz zostać posiadaczem BMW M4
           Competition lub BMW M3 Competition!
         </p>
         <p className={styles.description_text}>
-          Sam zdecyduj o który samochód chcesz zagrac – wolisz M3 czy M4?
+          Sam zdecyduj o który samochód chcesz zagrać – wolisz M3 czy M4?
         </p>
       </div>
     </div>

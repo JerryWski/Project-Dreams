@@ -12,7 +12,7 @@ const FormSection = () => {
             alt="envleope-icon"
           />
           <label className={styles.form_header}>
-            Zostaw dane w formularzu, a powiadomimy Cie o starcie!
+            Zostaw dane w formularzu, a powiadomimy Cię o starcie!
           </label>
         </div>
 
@@ -58,13 +58,13 @@ const FormSection = () => {
               required
             />
             <label className={styles.checkbox_label}>
-              Zapoznałem sie z{' '}
+              Zapoznałem się z{' '}
               <a className={styles.policy_links} href="/">
                 regulaminem
               </a>{' '}
               i{' '}
               <a className={styles.policy_links} href="/">
-                polityka prywatności.
+                polityką prywatności.
               </a>
             </label>
           </div>
@@ -78,9 +78,9 @@ const FormSection = () => {
               required
             />
             <label className={styles.checkbox_label}>
-              Wyrazam zgode na otrzymywanie od SPEŁNIJ MARZENIA tresci
-              marketingowych dotyczacych organizowanych loterii, z
-              wykorzystaniem automatycznych systemów wywołujacych, droga SMS.
+              Wyrażam zgodę na otrzymywanie od SPEŁNIJ MARZENIA treści
+              marketingowych dotyczących organizowanych loterii, z
+              wykorzystaniem automatycznych systemów wywołujących, drogą SMS.
             </label>
           </div>
         </div>

@@ -13,27 +13,27 @@ const CharitySection = () => {
       </picture>
       <div className={styles.charity_description}>
         <h2 className={styles.description_header}>
-          SPEŁNIAJAC MARZENIA NIESIEMY POMOC
+          SPEŁNIAJĄC MARZENIA NIESIEMY POMOC
         </h2>
         <span className={styles.redline} />
         <p className={styles.description_text}>
-          Spełnij-Marzenia.pl to nie tylko loteria promocyjna z nagrodami to
-          takze misja, która skupia swoje działania na tych, którzy najbardziej
-          potrzebuja pomocy.
+          Spełnij-Marzenia.pl to nie tylko loteria promocyjna z nagrodami, to
+          także misja, która skupia swoje działania na tych, którzy najbardziej
+          potrzebują pomocy.
         </p>
         <p className={styles.description_text}>
-          W ramach realizowanych przez nas działan, czesc srodków pozyskanych
-          dzieki Waszemu zaangazowaniu i udziale w loterii, zostanie przekazana
-          fundacjom, osobom potrzebujacym oraz instytucjom które dzieki naszym i
-          Waszym działaniom, beda miały szanse pomóc najbardziej potrzebujacym.
+          W ramach realizowanych przez nas działań, część środków pozyskanych
+          dzięki Waszemu zaangażowaniu i udziale w loterii, zostanie przekazana
+          fundacjom, osobom potrzebującym oraz instytucjom które dzięki naszym i
+          Waszym działaniom, będą miały szanse pomóc najbardziej potrzebującym.
         </p>
         <p className={styles.description_text}>
-          Wszystkie realizowane przez nas akcje beda dokumentowane, a do opinii
-          publicznej dzieki naszym mediom społecznosciowym trafia wszystkie
-          niezbedne dane oraz informacje o przeprowadzanych akcjach.
+          Wszystkie realizowane przez nas akcje będą dokumentowane, a do opinii
+          publicznej dzięki naszym mediom społecznościowym trafią wszystkie
+          niezbędne dane oraz informacje o przeprowadzanych akcjach.
         </p>
         <p className={styles.description_text}>
-          SpełnijMarzenia.pl nie tylko moze spełnic Twoje marzenia! Ale takze
+          SpełnijMarzenia.pl nie tylko może spełnić Twoje marzenia! Ale także
           wszystkich, którzy tego najbardziej potrzebują!
         </p>
       </div>
