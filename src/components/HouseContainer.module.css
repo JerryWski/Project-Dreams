@@ -1,16 +1,16 @@
-.motor_container {
-    
+.house_container {
+    width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--white);
+    background-color: #191919;
 }
-.cars_image {
+.house_image {
     width: 100vw;
 }
-.motor_description {
+.house_description {
     width: 100vw;
     background-color: #191919;
     background-image: url('./motot_bg_mobile.jpg');
