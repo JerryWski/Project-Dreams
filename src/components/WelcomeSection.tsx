@@ -15,6 +15,25 @@ const WelcomeSection = () => {
           </p>
           <span className={styles.intro_subtext}>Marzenia się spełniają!</span>
         </div>
+
+        <ul className={styles.social_bar}>
+          <li className={styles.social_bar__items}>
+            <a className={styles.icon_facebook} href=".">
+              <i className="fa-brands fa-facebook-f fa-2x" />
+            </a>
+          </li>
+          <li className={styles.social_bar__items}>
+            <a className={styles.icon_instagram} href=".">
+              <i className="fa-brands fa-instagram fa-2x" />
+            </a>
+          </li>
+          <li className={styles.social_bar__items}>
+            <a className={styles.icon_youtube} href=".">
+              <i className="fa-brands fa-youtube fa-2x" />
+            </a>
+          </li>
+        </ul>
+
         <div className={styles.intro_bar}>
           <div className={styles.logo_container}>
             <img src="./logo_1.svg" alt="star_logo" />
