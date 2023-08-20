@@ -1,4 +1,5 @@
 import styles from './App.module.css';
+import CharitySection from './components/CharitySection';
 import HouseContainer from './components/HouseContainer';
 import MotorSection from './components/MotorSection';
 import SliderSection from './components/SliderSection';
@@ -11,6 +12,7 @@ const App = () => {
       <SliderSection />
       <MotorSection />
       <HouseContainer />
+      <CharitySection />
     </div>
   );
 };
