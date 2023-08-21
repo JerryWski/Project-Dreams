@@ -78,7 +78,9 @@ const FormSection = () => {
                 </a>
               </label>
             </div>
-            <div className={styles.checbox_container}>
+            <div
+              className={`${styles.checbox_container} ${styles.label_third}`}
+            >
               <input
                 className={styles.form_checkbox}
                 type="checkbox"
