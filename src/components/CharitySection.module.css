@@ -14,7 +14,7 @@
 .charity_description {
   width: 100vw;
   background-color: #191919;
-  background-image: url('./charity_bg_mobile.jpg');
+  background-image: url('/charity_bg_mobile.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
