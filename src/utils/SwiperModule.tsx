@@ -34,30 +34,6 @@ const SwiperModule = () => {
         </picture>
       </SwiperSlide>
     </Swiper>
-    // <div className="swiper">
-    //   {/* <!-- Additional required wrapper --> */}
-    //   <div className="swiper-wrapper">
-    //     <div className="swiper-slide">
-    //       <picture>
-    //         <source srcSet="./slider_1.jpg" media="(min-width: 800px)" />
-    //         <img src="./slider_1_mobile.jpg" alt="cars" />
-    //       </picture>
-    //     </div>
-    //     <div className="swiper-slide">
-    //       <picture>
-    //         <source srcSet="./slider_1.jpg" media="(min-width: 800px)" />
-    //         <img src="./slider_1_mobile.jpg" alt="cars" />
-    //       </picture>
-    //     </div>
-    //     ...
-    //   </div>
-    //   {/* <!-- If we need pagination --> */}
-    //   <div className="swiper-pagination" />
-
-    //   {/* <!-- If we need navigation buttons --> */}
-    //   <div className="swiper-button-prev" />
-    //   <div className="swiper-button-next" />
-    // </div>
   );
 };
 
