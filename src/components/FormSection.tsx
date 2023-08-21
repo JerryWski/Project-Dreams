@@ -39,7 +39,7 @@ const FormSection = () => {
               <input
                 className={styles.form_inputs}
                 placeholder=" + 48   numer telefonu"
-                type="tel"
+                type="number"
                 id="phone"
                 name="phone"
                 required
