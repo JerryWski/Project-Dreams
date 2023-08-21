@@ -11,7 +11,7 @@ const WelcomeSection = () => {
           </h1>
           <p className={styles.intro_text}>
             {' '}
-            Już wkrótce loteria, która może odmienić twoje życie.
+            Już wkrótce loteria, która odmieni Twoje życie.
           </p>
           <span className={styles.intro_subtext}>Marzenia się spełniają!</span>
         </div>

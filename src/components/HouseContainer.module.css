@@ -30,7 +30,7 @@
   margin-bottom: 30px;
   padding: 0 30px;
   letter-spacing: -1px;
-  line-height: 1.1rem;
+  line-height: 1.6rem;
   word-break: break-word;
 }
 .redline {
@@ -61,6 +61,7 @@
     font-size: 2.7rem;
     margin-top: 60px;
     padding-bottom: 15px;
+    line-height: 2.8rem;
   }
   .description_text {
     max-width: 650px;

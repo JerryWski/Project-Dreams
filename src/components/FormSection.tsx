@@ -4,7 +4,7 @@ import styles from './FormSection.module.css';
 const FormSection = () => {
   return (
     <div className={styles.form_section}>
-      <form id="myForm" className={styles.form_container}>
+      <form id="myForm" className={styles.form_container} method="post">
         <div className={styles.form_header_wrapper}>
           <img
             className={styles.form_image}
@@ -12,7 +12,7 @@ const FormSection = () => {
             alt="envleope-icon"
           />
           <label className={styles.form_header}>
-            Zostaw dane w formularzu, a powiadomimy Cię o starcie!
+            Zostaw dane w formularzu, a powiadomimy Cię o starcie loterii!
           </label>
         </div>
 
@@ -68,14 +68,29 @@ const FormSection = () => {
                 required
               />
               <label className={styles.checkbox_label}>
-                Zapoznałem się z{' '}
+                Oświadczam, że zapoznałem się z Polityką prywatności, dostępną
                 <a className={styles.policy_links} href="/">
-                  regulaminem
-                </a>{' '}
-                i{' '}
-                <a className={styles.policy_links} href="/">
-                  polityką prywatności.
+                  {' '}
+                  tutaj.
                 </a>
+              </label>
+            </div>
+            <div
+              className={`${styles.checbox_container} ${styles.label_third}`}
+            >
+              <input
+                className={styles.form_checkbox}
+                type="checkbox"
+                id="option2"
+                name="option"
+                value="Option 2"
+                required
+              />
+              <label className={styles.checkbox_label}>
+                Wyrażam zgodę na przesyłanie mi informacji handlowych o
+                loteriach organizowanych w ramach serwisu Spełnij- Marzenia.pl
+                na podany wyżej adres e-mail oraz wykorzystywanie mojego adresu
+                e-mail do celów marketingu bezpośredniego, związanego z loterią.
               </label>
             </div>
             <div
@@ -90,9 +105,10 @@ const FormSection = () => {
                 required
               />
               <label className={styles.checkbox_label}>
-                Wyrażam zgodę na otrzymywanie od SPEŁNIJ MARZENIA treści
-                marketingowych dotyczących organizowanych loterii, z
-                wykorzystaniem automatycznych systemów wywołujących, drogą SMS.
+                Wyrażam zgodę na przesyłanie mi informacji handlowych o
+                loteriach organizowanych w ramach serwisu Spełnij-Marzenia.pl na
+                podany wyżej numer telefonu oraz wykorzystywanie mojego numeru
+                telefonu do celów marketingu bezpośredniego, związanego loterią.
               </label>
             </div>
             <button

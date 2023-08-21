@@ -21,11 +21,11 @@
   display: none;
 }
 .form_header {
-  max-width: 300px;
+  max-width: 350px;
   text-align: center;
   font-size: 1.4rem;
   font-family: 'Paytone One', sans-serif;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 .inputs_wrapper {
   max-width: 400px;
@@ -53,7 +53,7 @@
 }
 .checkbox_label {
   font-size: 0.7rem;
-  padding-left: 10px;
+  padding-left: 5px;
   font-family: var(--main-font);
 }
 .label_third {
@@ -191,6 +191,7 @@
   }
   .checkbox_label {
     font-size: 0.9rem;
+    padding-left: 10px;
   }
 }
 @media (max-width: 925px) {
