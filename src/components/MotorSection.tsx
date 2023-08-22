@@ -2,16 +2,17 @@ import { useTranslation } from 'react-i18next';
 import styles from './MotorSection.module.css';
 
 const MotorSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  const imagePath = `/${
+    currentLanguage === 'en' ? 'motor_section_eng.jpg' : 'motor_section.jpg'
+  }`;
   return (
     <div className={styles.motor_container}>
       <picture>
-        <source srcSet="./motor_section.jpg" media="(min-width: 800px)" />
-        <img
-          className={styles.cars_image}
-          src="./motor_section_mobile.jpg"
-          alt="cars"
-        />
+        <source srcSet={imagePath} media="(min-width: 800px)" />
+        <img className={styles.cars_image} src={imagePath} alt="cars" />
       </picture>
       <div className={styles.motor_description}>
         <h2 className={styles.description_header}>
