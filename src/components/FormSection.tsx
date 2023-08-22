@@ -118,7 +118,7 @@ const FormSection = () => {
               type="submit"
               id="submitButton"
             >
-              Powiadom mnie!{' '}
+              {t('Notify me')}{' '}
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
