@@ -1,9 +1,23 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { useTranslation, Trans } from 'react-i18next';
+import { useState } from 'react';
 import styles from './FormSection.module.css';
 
 const FormSection = () => {
   const { t } = useTranslation();
+
+  const [checkAll, setCheckAll] = useState(false);
+  const [checkbox2, setCheckbox2] = useState(false);
+  const [checkbox3, setCheckbox3] = useState(false);
+  const [checkbox4, setCheckbox4] = useState(false);
+
+  const handleOption1Click = () => {
+    setCheckAll(!checkAll);
+    setCheckbox2(!checkAll);
+    setCheckbox3(!checkAll);
+    setCheckbox4(!checkAll);
+  };
+
   return (
     <div className={styles.form_section}>
       <form id="myForm" className={styles.form_container} method="post">
@@ -54,6 +68,8 @@ const FormSection = () => {
                 id="option1"
                 name="option"
                 value="Option 1"
+                checked={checkAll}
+                onClick={handleOption1Click}
                 required
               />
               <label className={styles.checkbox_label}>
@@ -67,6 +83,8 @@ const FormSection = () => {
                 id="option2"
                 name="option"
                 value="Option 2"
+                checked={checkbox2}
+                onChange={() => setCheckbox2(!checkbox2)}
                 required
               />
               <label className={styles.checkbox_label}>
@@ -88,6 +106,8 @@ const FormSection = () => {
                 id="option2"
                 name="option"
                 value="Option 2"
+                checked={checkbox3}
+                onChange={() => setCheckbox3(!checkbox3)}
                 required
               />
               <label className={styles.checkbox_label}>
@@ -105,6 +125,8 @@ const FormSection = () => {
                 id="option3"
                 name="option"
                 value="Option 3"
+                checked={checkbox4}
+                onChange={() => setCheckbox4(!checkbox4)}
                 required
               />
               <label className={styles.checkbox_label}>

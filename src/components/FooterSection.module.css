@@ -14,7 +14,7 @@
 }
 .footer_text {
     max-width: 100px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-family: var(--main-font);
 /* width: 50%; */
 }
@@ -24,7 +24,7 @@
         height: 150px;
     }
     .footer_text {
-        font-size: .9rem;
+        font-size: 1.1rem;
         max-width: 150px;
     }
 }
