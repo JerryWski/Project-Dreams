@@ -2,5 +2,12 @@
   "mainHeader": "Make Your <1>Dreams</1> Come",
   "Coming soon lottery that will change Your life": "Coming soon lottery that will change Your life",
   "Dreams come true": "Dreams come true",
-  "Housing and automotive lottery aproaches!": "Housing and automotive lottery aproaches!"
+  "Housing and automotive lottery aproaches!": "Housing and automotive lottery aproaches!",
+  "Leave the data in the form and get notify about the start" : "Leave the data in the form and get notify about the start",
+  "emailPlaceholder" : "Your e-mail",
+  "phonePlaceholder": " + 48   phone number",
+  "Select all Consents": "SELECT ALL CONSENTS",
+  "policyLink" : "I declare that I have read the Privacy Policy available <1 className={styles.policy_links} href='/'>here.</1>",
+  "I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to my email provided above and to use my email address for direct marketing purposes related to the lottery" : "I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to my email provided above and to use my email address for direct marketing purposes related to the lottery.",
+  "I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to the telephone number my provided above and to use my telephone number for direct marketing purposes related to the lottery": "I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to the telephone number my provided above and to use my telephone number for direct marketing purposes related to the lottery."
 }

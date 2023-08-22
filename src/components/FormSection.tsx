@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import { useTranslation, Trans } from 'react-i18next';
 import styles from './FormSection.module.css';
 
 const FormSection = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.form_section}>
       <form id="myForm" className={styles.form_container} method="post">
@@ -12,7 +14,7 @@ const FormSection = () => {
             alt="envleope-icon"
           />
           <label className={styles.form_header}>
-            Zostaw dane w formularzu, a powiadomimy Cię o starcie loterii!
+            {t('Leave the data in the form and get notify about the start')}
           </label>
         </div>
 
@@ -29,7 +31,7 @@ const FormSection = () => {
               <label htmlFor="email" id="email" />
               <input
                 className={styles.form_inputs}
-                placeholder=" Wpisz swój e-mail"
+                placeholder={t('emailPlaceholder')}
                 type="email"
                 id="email"
                 name="email"
@@ -38,7 +40,7 @@ const FormSection = () => {
               <label htmlFor="phone" id="phone" />
               <input
                 className={styles.form_inputs}
-                placeholder=" + 48   numer telefonu"
+                placeholder={t('phonePlaceholder')}
                 type="number"
                 id="phone"
                 name="phone"
@@ -55,7 +57,7 @@ const FormSection = () => {
                 required
               />
               <label className={styles.checkbox_label}>
-                ZAZNACZ WSZYSTKIE ZGODY
+                {t('Select all Consents')}
               </label>
             </div>
             <div className={styles.checbox_container}>
@@ -68,11 +70,13 @@ const FormSection = () => {
                 required
               />
               <label className={styles.checkbox_label}>
-                Oświadczam, że zapoznałem się z Polityką prywatności, dostępną
-                <a className={styles.policy_links} href="/">
-                  {' '}
-                  tutaj.
-                </a>
+                <Trans i18nKey="policyLink">
+                  Oświadczam, że zapoznałem się z Polityką prywatności, dostępną
+                  <a className={styles.policy_links} href="/">
+                    {' '}
+                    tutaj.
+                  </a>
+                </Trans>
               </label>
             </div>
             <div
@@ -87,10 +91,9 @@ const FormSection = () => {
                 required
               />
               <label className={styles.checkbox_label}>
-                Wyrażam zgodę na przesyłanie mi informacji handlowych o
-                loteriach organizowanych w ramach serwisu Spełnij- Marzenia.pl
-                na podany wyżej adres e-mail oraz wykorzystywanie mojego adresu
-                e-mail do celów marketingu bezpośredniego, związanego z loterią.
+                {t(
+                  'I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to my email provided above and to use my email address for direct marketing purposes related to the lottery'
+                )}
               </label>
             </div>
             <div
@@ -105,10 +108,9 @@ const FormSection = () => {
                 required
               />
               <label className={styles.checkbox_label}>
-                Wyrażam zgodę na przesyłanie mi informacji handlowych o
-                loteriach organizowanych w ramach serwisu Spełnij-Marzenia.pl na
-                podany wyżej numer telefonu oraz wykorzystywanie mojego numeru
-                telefonu do celów marketingu bezpośredniego, związanego loterią.
+                {t(
+                  'I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to the telephone number my provided above and to use my telephone number for direct marketing purposes related to the lottery'
+                )}
               </label>
             </div>
             <button

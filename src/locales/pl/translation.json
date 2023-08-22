@@ -2,5 +2,12 @@
   "mainHeader": "Spełniamy Twoje <1>marzenia!</1>",
   "Coming soon lottery that will change Your life": "Już wkrótce loteria, która odmienia Twoje życie ",
   "Dreams come true": "Marzenia się spełniają ",
-  "Housing and automotive lottery aproaches!": "Nadciąga loteria motoryzacyjna i mieszkaniowa"
+  "Housing and automotive lottery aproaches!": "Nadciąga loteria motoryzacyjna i mieszkaniowa",
+  "Leave the data in the form and get notify about the start": "Zostaw dane w formularzu, a powiadomimy Cię o starcie loterii!",
+  "emailPlaceholder": "Wpisz swój adres mailowy",
+  "phonePlaceholder": " + 48   numer telefonu",
+  "Select all Consents" : "ZAZNACZ WSZYSTKIE ZGODY",
+  "policyLink": "Oświadczam, że zapoznałem się z Polityką prywatności, dostępną <1 className={styles.policy_links} href='/'> tutaj. </1>",
+  "I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to my email provided above and to use my email address for direct marketing purposes related to the lottery" : "Wyrażam zgodę na przesyłanie mi informacji handlowych o loteriach organizowanych w ramach serwisu Spełnij- Marzenia.pl na podany wyżej adres e-mail oraz wykorzystywanie mojego adresu e-mail do celów marketingu bezpośredniego, związanego z loterią.",
+  "I agree to send me commercial information about lotteries organized as part of the Spelnij-Marzenia.pl website to the telephone number my provided above and to use my telephone number for direct marketing purposes related to the lottery": "Wyrażam zgodę na przesyłanie mi informacji handlowych o loteriach organizowanych w ramach serwisu Spełnij-Marzenia.pl na podany wyżej numer telefonu oraz wykorzystywanie mojego numeru telefonu do celów marketingu bezpośredniego, związanego loterią."
 }
