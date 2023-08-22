@@ -3,8 +3,8 @@ import FormSection from './FormSection';
 import styles from './WelcomeSection.module.css';
 
 const lngs: any = {
-  pl: { nativeName: 'PL' },
-  en: { nativeName: 'EN' },
+  pl: { nativeName: 'PL 🇵🇱' },
+  en: { nativeName: 'EN 🇬🇧' },
 };
 
 const WelcomeSection = () => {
@@ -13,10 +13,10 @@ const WelcomeSection = () => {
     <div className={styles.welcome_section}>
       <div className={styles.intro_container}>
         <div className={styles.intro_wrapper}>
-          <div>
+          <div className={styles.lang_switcher}>
             {Object.keys(lngs).map((lng) => (
               <button
-                className={styles.translator}
+                className={styles.translator_button}
                 type="submit"
                 key={lng}
                 onClick={() => i18n.changeLanguage(lng)}
@@ -26,6 +26,7 @@ const WelcomeSection = () => {
               </button>
             ))}{' '}
           </div>
+
           <h1 className={styles.intro_heading}>
             <Trans i18nKey="mainHeader">
               Spełniamy Twoje <span>marzenia!</span>
