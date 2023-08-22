@@ -1,19 +1,41 @@
+import { useTranslation, Trans } from 'react-i18next';
 import FormSection from './FormSection';
 import styles from './WelcomeSection.module.css';
 
+const lngs: any = {
+  pl: { nativeName: 'PL' },
+  en: { nativeName: 'EN' },
+};
+
 const WelcomeSection = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className={styles.welcome_section}>
       <div className={styles.intro_container}>
         <div className={styles.intro_wrapper}>
+          <div>
+            {Object.keys(lngs).map((lng) => (
+              <button
+                className={styles.translator}
+                type="submit"
+                key={lng}
+                onClick={() => i18n.changeLanguage(lng)}
+                disabled={i18n.resolvedLanguage === lng}
+              >
+                {lngs[lng].nativeName}
+              </button>
+            ))}{' '}
+          </div>
           <h1 className={styles.intro_heading}>
-            Spełniamy Twoje <span>marzenia!</span>
+            <Trans i18nKey="mainHeader">
+              Spełniamy Twoje <span>marzenia!</span>
+            </Trans>
           </h1>
           <p className={styles.intro_text}>
             {' '}
-            Już wkrótce loteria, która odmieni Twoje życie.
+            {t('Coming soon lottery that will change Your life')}
           </p>
-          <span className={styles.intro_subtext}>Marzenia się spełniają!</span>
+          <span className={styles.intro_subtext}>{t('Dreams come true')}</span>
         </div>
 
         <ul className={styles.social_bar}>
@@ -40,7 +62,7 @@ const WelcomeSection = () => {
           </div>
           <div className={styles.subheader_container}>
             <h2 className={styles.subheader}>
-              Nadciąga loteria motoryzacyjna i mieszkaniowa!
+              {t('Housing and automotive lottery aproaches!')}
             </h2>
           </div>
         </div>
