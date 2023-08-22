@@ -7,7 +7,7 @@ import translationEN from './locales/en/translation.json';
 const resources = {
   en: {
     translation: translationEN,
-    image: '/motor_section_eng.jpg',
+    imageMotors: '/motor_section_eng.jpg',
   },
   pl: {
     translation: translationPL,

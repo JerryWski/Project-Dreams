@@ -2,16 +2,17 @@ import { useTranslation } from 'react-i18next';
 import styles from './HouseContainer.module.css';
 
 const HouseContainer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  const imagePath = `/${
+    currentLanguage === 'en' ? 'bg_house_family_eng.jpg' : 'bg_house_family.jpg'
+  }`;
   return (
     <div className={styles.house_container}>
       <picture>
-        <source srcSet="./bg_house_family.jpg" media="(min-width: 800px)" />
-        <img
-          className={styles.house_image}
-          src="./bg_house_family_mobile.jpg"
-          alt="interior"
-        />
+        <source srcSet={imagePath} media="(min-width: 800px)" />
+        <img className={styles.house_image} src={imagePath} alt="interior" />
       </picture>
       <div className={styles.house_description}>
         <h2 className={styles.description_header}>
