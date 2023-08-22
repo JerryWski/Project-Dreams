@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next';
 import styles from './CharitySection.module.css';
 
 const CharitySection = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.charity_container}>
       <picture>
@@ -12,29 +14,30 @@ const CharitySection = () => {
         />
       </picture>
       <div className={styles.charity_description}>
+        <h2 className={styles.description_header}>{t('The Mission')}</h2>
         <h2 className={styles.description_header}>
-          SPEŁNIAJĄC MARZENIA NIESIEMY POMOC
+          {t('Dreams come true by helping')}
         </h2>
         <span className={styles.redline} />
         <p className={styles.description_text}>
-          Spelnij-Marzenia.pl to nie tylko ciekawe produkty i dobra zabawa, to
-          także misja, która skupia swoje działania na tych, którzy najbardziej
-          potrzebują pomocy.
+          {t(
+            'SpelnijMarzenia.pl is not only a useful products and good fun. This is the mission to bring help to those who need it most.'
+          )}
         </p>
         <p className={styles.description_text}>
-          W ramach realizowanych przez nas działań, część środków pozyskanych
-          dzięki Waszemu zaangażowaniu, zostanie przekazana fundacjom, osobom
-          potrzebującym oraz instytucjom które dzięki naszym i Waszym
-          działaniom, będą miały szanse pomóc najbardziej potrzebującym.
+          {t(
+            'Within the scope of SpełnijMarzenia.pl activities some of the funds acquired thanks to  your commitment are handed over to the foundations, those in need, and to the organizations, which will have higher prospects of helping to the persons in crisis. All of our activities will be documented and all the essential data and information related will be made public via our social media.'
+          )}
         </p>
         <p className={styles.description_text}>
-          Wszystkie realizowane przez nas akcje będą dokumentowane, a do opinii
-          publicznej dzięki naszym mediom społecznościowym trafią wszystkie
-          niezbędne dane oraz informacje o przeprowadzanych akcjach.
+          {t(
+            'All of our activities will be documented and all the essential data and information related will be made public via our social media.'
+          )}
         </p>
         <p className={styles.description_text}>
-          Spelnij-Marzenia.pl nie tylko może spełnić Twoje marzenia! Ale także
-          wszystkich, którzy tego najbardziej potrzebują!
+          {t(
+            'SpelnijMarzenia.pl not only makes your dreams come true but also of those who need it most!'
+          )}
         </p>
       </div>
     </div>
