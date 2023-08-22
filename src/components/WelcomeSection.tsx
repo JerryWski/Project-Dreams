@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
+import { useState, useEffect } from 'react';
 import FormSection from './FormSection';
 import styles from './WelcomeSection.module.css';
 
@@ -9,6 +10,16 @@ const lngs: any = {
 
 const WelcomeSection = () => {
   const { t, i18n } = useTranslation();
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 800);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 800);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className={styles.welcome_section}>
       <div className={styles.intro_container}>
@@ -45,7 +56,11 @@ const WelcomeSection = () => {
               className={styles.icon_facebook}
               href="https://www.facebook.com/profile.php?id=61550111764198"
             >
-              <i className="fa-brands fa-facebook-f fa-2x" />
+              <i
+                className={`fa-brands fa-facebook ${
+                  window.innerWidth >= 800 ? 'fa-2x' : ''
+                }`}
+              />
             </a>
           </li>
           <li className={styles.social_bar__items}>
@@ -53,7 +68,11 @@ const WelcomeSection = () => {
               className={styles.icon_instagram}
               href="https://instagram.com/spelnij_marzenia.pl?igshid=MzRlODBiNWFlZA=="
             >
-              <i className="fa-brands fa-instagram fa-2x" />
+              <i
+                className={`fa-brands fa-instagram ${
+                  window.innerWidth >= 800 ? 'fa-2x' : ''
+                }`}
+              />
             </a>
           </li>
           <li className={styles.social_bar__items}>
@@ -61,7 +80,11 @@ const WelcomeSection = () => {
               className={styles.icon_youtube}
               href="https://www.youtube.com/@SpelnijMarzenia"
             >
-              <i className="fa-brands fa-youtube fa-2x" />
+              <i
+                className={`fa-brands fa-youtube ${
+                  window.innerWidth >= 800 ? 'fa-2x' : ''
+                }`}
+              />
             </a>
           </li>
           <li className={styles.social_bar__items}>
@@ -69,7 +92,11 @@ const WelcomeSection = () => {
               className={styles.icon_x}
               href="https://twitter.com/nij_spe73679"
             >
-              <i className="fa-brands fa-x-twitter fa-2x" />
+              <i
+                className={`fa-brands fa-x-twitter ${
+                  window.innerWidth >= 800 ? 'fa-2x' : ''
+                }`}
+              />
             </a>
           </li>
         </ul>
