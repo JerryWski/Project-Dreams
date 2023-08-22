@@ -1,6 +1,8 @@
+import { useTranslation, Trans } from 'react-i18next';
 import styles from './MotorSection.module.css';
 
 const MotorSection = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.motor_container}>
       <picture>
@@ -13,15 +15,23 @@ const MotorSection = () => {
       </picture>
       <div className={styles.motor_description}>
         <h2 className={styles.description_header}>
-          Spełnij swoje motoryzacyjne marzenie !
+          {t('Fufil your motor-dream and get a BMW M of your dreams!')}
         </h2>
         <span className={styles.redline} />
         <p className={styles.description_text}>
-          Dzięki loterii Spełnij-Marzenia.pl możesz zostać posiadaczem BMW M4
-          Competition lub BMW M3 Competition!
+          {t(
+            'The Spelnij-Marzenia.pl lottery can make you the BMW M4 Competition or BMW M3 Competition owner!'
+          )}
         </p>
         <p className={styles.description_text}>
-          Sam zdecyduj o który samochód chcesz zagrać – wolisz M3 czy M4?
+          {t(
+            'You decide which car is at stake – whether it’s M3 or M4. You choose!'
+          )}
+        </p>
+        <p className={styles.description_text}>
+          {t(
+            'The M cars do not only look incredible but foremost bring about the sports feelings, which will keep you company at every ride.'
+          )}
         </p>
       </div>
     </div>
