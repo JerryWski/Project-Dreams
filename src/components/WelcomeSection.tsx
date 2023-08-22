@@ -19,7 +19,7 @@ const WelcomeSection = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isWideScreen]);
   return (
     <div className={styles.welcome_section}>
       <div className={styles.intro_container}>

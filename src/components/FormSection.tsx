@@ -69,7 +69,7 @@ const FormSection = () => {
                 name="option"
                 value="Option 1"
                 checked={checkAll}
-                onClick={handleOption1Click}
+                onChange={handleOption1Click}
                 required
               />
               <label className={styles.checkbox_label}>
