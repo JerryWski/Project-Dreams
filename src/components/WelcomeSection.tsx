@@ -40,18 +40,35 @@ const WelcomeSection = () => {
 
         <ul className={styles.social_bar}>
           <li className={styles.social_bar__items}>
-            <a className={styles.icon_facebook} href=".">
+            <a
+              className={styles.icon_facebook}
+              href="https://www.facebook.com/profile.php?id=61550111764198"
+            >
               <i className="fa-brands fa-facebook-f fa-2x" />
             </a>
           </li>
           <li className={styles.social_bar__items}>
-            <a className={styles.icon_instagram} href=".">
+            <a
+              className={styles.icon_instagram}
+              href="https://instagram.com/spelnij_marzenia.pl?igshid=MzRlODBiNWFlZA=="
+            >
               <i className="fa-brands fa-instagram fa-2x" />
             </a>
           </li>
           <li className={styles.social_bar__items}>
-            <a className={styles.icon_youtube} href=".">
+            <a
+              className={styles.icon_youtube}
+              href="https://www.youtube.com/@SpelnijMarzenia"
+            >
               <i className="fa-brands fa-youtube fa-2x" />
+            </a>
+          </li>
+          <li className={styles.social_bar__items}>
+            <a
+              className={styles.icon_x}
+              href="https://twitter.com/nij_spe73679"
+            >
+              <i className="fa-brands fa-x-twitter fa-2x" />
             </a>
           </li>
         </ul>

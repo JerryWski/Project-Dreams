@@ -6,10 +6,10 @@ const HouseContainer = () => {
   return (
     <div className={styles.house_container}>
       <picture>
-        <source srcSet="./bg_house_2.jpg" media="(min-width: 800px)" />
+        <source srcSet="./bg_house_family.jpg" media="(min-width: 800px)" />
         <img
           className={styles.house_image}
-          src="./bg_house_mobile.jpg"
+          src="./bg_house_family_mobile.jpg"
           alt="interior"
         />
       </picture>
