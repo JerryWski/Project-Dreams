@@ -2,15 +2,21 @@ import { useTranslation } from 'react-i18next';
 import styles from './CharitySection.module.css';
 
 const CharitySection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const currentLanguage = i18n.language;
+
+  const imagePath = `/${
+    currentLanguage === 'en' ? 'charity_eng.jpg' : 'charity.jpg'
+  }`;
   return (
     <div className={styles.charity_container}>
       <picture>
-        <source srcSet="./charity.jpg" media="(min-width: 800px)" />
+        <source srcSet={imagePath} media="(min-width: 800px)" />
         <img
           className={styles.charity_image}
-          src="./charity_mobile.jpg"
-          alt="cars"
+          src={imagePath}
+          alt="charity_heart"
         />
       </picture>
       <div className={styles.charity_description}>
