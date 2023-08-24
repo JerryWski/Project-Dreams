@@ -4,12 +4,13 @@ import FormSection from './FormSection';
 import styles from './WelcomeSection.module.css';
 
 const lngs: any = {
-  pl: { nativeName: 'PL 🇵🇱' },
-  en: { nativeName: 'EN 🇬🇧' },
+  pl: { nativeName: '' },
+  en: { nativeName: '' },
 };
 
 const WelcomeSection = () => {
   const { t, i18n } = useTranslation();
+  const languages = Object.keys(lngs);
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 800);
   useEffect(() => {
     const handleResize = () => {
@@ -25,9 +26,11 @@ const WelcomeSection = () => {
       <div className={styles.intro_container}>
         <div className={styles.intro_wrapper}>
           <div className={styles.lang_switcher}>
-            {Object.keys(lngs).map((lng) => (
+            {languages.map((lng, index) => (
               <button
-                className={styles.translator_button}
+                className={`${styles.translator_button} ${
+                  index === 0 ? styles.left_button : styles.right_button
+                }`}
                 type="submit"
                 key={lng}
                 onClick={() => i18n.changeLanguage(lng)}
